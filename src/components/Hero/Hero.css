@@ -1,0 +1,32 @@
+.slider-wrapper {
+    height: calc(100vh - 80px);
+}
+
+
+.swiper-pagination {
+    z-index: 10;
+    /* transform: translateX(-100%) !important; */
+    left: 90% !important;
+    bottom: 2rem !important;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+.swiper-pagination-bullet {
+    width: 10px !important;
+    height: 10px !important;
+    background-color: #c9c9c9 !important;
+}
+
+.swiper-pagination-bullet-active {
+    width: 12px !important;
+    height: 12px !important;
+    background-color: #fff !important;
+}

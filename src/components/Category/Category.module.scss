@@ -1,0 +1,13 @@
+.swiper-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.swiper-slide {
+    width: auto !important; /* Giữ nguyên kích thước theo nội dung */
+    display: flex;
+    justify-content: center;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: transparent !important;
+}

@@ -1,0 +1,96 @@
+@media (max-width: 46rem) {
+    .medium, .small {
+        width: 176px !important;
+    }
+
+    .small {
+        height: 150px !important;
+    }
+
+    .medium {
+        height: 330px !important;
+    }
+
+    .large {
+        width: 248px !important;
+        height: 190px !important;
+    }
+}
+.swiper-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.swiper-slide {
+    width: auto !important; /* Giữ nguyên kích thước theo nội dung */
+    display: flex;
+    justify-content: center;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: transparent !important;
+}
+
+.medium {
+    width: 207px ; 
+    height: 366px;
+}
+
+.large {
+    width: 353px ;
+    height: 242px;  
+}
+.small {
+    width: 207px; 
+    height: 160px
+}
+
+.medium,
+.small,
+.large {
+    position: relative;
+    overflow: hidden;
+}
+
+.large::before, .medium::before, .small::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.large:hover::before,
+.medium:hover::before,
+.small:hover::before {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.movie-item {
+    width: 100%;
+    height: 100%;
+}
+.icon-play {
+    position: absolute;
+    cursor: pointer;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white-color);
+    font-size: 2rem;
+    display: none;
+}
+
+.large:hover .icon-play {
+    display: block;
+}
+
+.medium:hover .icon-play {
+  display: block;
+}
+
+.small:hover .icon-play {
+  display: block;
+}

@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --primary-color: #ff6500;
+    --text-gray-color: #9b9b9b;
+    --header: 80px;
+    --btn-color: #202020;
+
+}
+
+* {
+    // margin: 0;
+    // padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+// Fonts embeded
+@font-face {
+  font-family: Poppins-Regular;
+  src: url('/assets/fonts/TikTokFont-Regular.woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: SF-UI-Display-Bold;
+  src: url('/assets/fonts/TikTokDisplayFont-Bold.woff2');
+  font-weight: 700;
+}
+@font-face {
+  font-family: SF-UI-Display-Regular;
+  src: url('/src/assets/fonts/SF-UI-Display-Regular.64924ba.ttf');
+  font-weight: 400;
+}
+
+body {
+  text-rendering:optimizeSpeed;
+  font-weight: 300;
+  font-family: "roboto", serif;
+  background-color: var(--black-color);
+}
+
+.swiper-pagination-bullet {
+  background-color: white;
+  width: 12px;
+  height: 12px;
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background-color: red; /* Màu khi active */
+}
+
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}

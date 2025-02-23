@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #ff6500 !important;
+    --color-text: #9b9b9b;
+    --color-gray: #202020;
+}
+
+html {
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+
+html::-webkit-scrollbar {
+    width: 4px;
+    /* height: 10px; */
+}
+
+html::-webkit-scrollbar-thumb {
+    /* border-radius: 9px; */
+    background: #888;
+}
