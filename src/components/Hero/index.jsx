@@ -35,7 +35,7 @@ function Hero({ data }) {
                   modules={[Navigation, Pagination, Autoplay]}
                   loop={true} // Lặp vô hạn
                   autoplay={{ delay: 7000, disableOnInteraction: false }} // Tự động chạy
-                  navigation // Hiển thị nút điều hướng
+                  // navigation // Hiển thị nút điều hướng
                   pagination={{
                     clickable: true,
                     dynamicBullets: true,

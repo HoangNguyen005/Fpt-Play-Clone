@@ -64,7 +64,7 @@ function ItemSlide({ large, medium, small, data }) {
                 cssMode
                 freeMode={true}
                 modules={[Navigation, FreeMode]}
-                navigation // Hiển thị nút điều hướng
+                // navigation // Hiển thị nút điều hướng
                 onSwiper={(swiper) => (swiperRef.current = swiper)} // Lưu instance của Swiper
                 speed={200} // Tăng tốc độ trượt (ms)
                 effect="slide" // Hiệu ứng mượt mà (có thể dùng 'slide', 'fade', 'cube', 'coverflow', 'flip')
