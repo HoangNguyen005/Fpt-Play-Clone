@@ -16,6 +16,7 @@ import { Navigation, FreeMode } from "swiper/modules";
 import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { faPlay } from '@fortawesome/free-solid-svg-icons';
 
+import { toTop } from "../../utils/helpers";
 
 import rateStar from '../../assets/imgs/rate-star.png'
 import nonRateStar from '../../assets/imgs/non-rate-star.png'
@@ -95,10 +96,7 @@ function Video() {
 
 
     const handleLive = (item) => {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        })
+        toTop()
         setActiveEpisode(item.slug);
         setSrc(item.link_m3u8)
     }
@@ -123,7 +121,7 @@ function Video() {
                     <div className="movie-detail mt-20 grid grid-cols-1 gap-6 text-white lg:grid-cols-3">
                         <div className="col-span-2">
                             <div className="w-full">
-                                <h1 className="text-2xl uppercase">{movie.movie.name}</h1>
+                                <h1 className="text-xl  md:text-2xl uppercase">{movie.movie.name}</h1>
                                 <h3 className="text-base my-4 capitalize text-[#d2d2d2]">{movie.movie.origin_name}</h3>
                                 <div className="flex items-center gap-3">
 

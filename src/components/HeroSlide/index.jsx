@@ -46,10 +46,10 @@ function HeroSlide({ item }) {
 
                 <div className="flex items-center">
                     <Button to={configs.routes.video} icon={<FontAwesomeIcon icon={faPlay} />} data={item.slug} className="cursor-pointer lg:w-46 w-28 h-10 lg:h-12 text-sm font-[500] leading-10 lg:leading-12 rounded-md" primary>Xem ngay</Button>
-                    <div onClick={()=>setFollow(!follow)} className="icon size-10 p-2 md:p-3 md:size-12 flex items-center justify-center rounded-full cursor-pointer hover:text-primary ml-4 bg-[#202020]">
+                    <div onClick={()=>setFollow(!follow)} className="icon size-10 p-2 md:p-3 md:size-12 flex items-center justify-center rounded-full cursor-pointer hover:text-primary ml-2 md:ml-4 bg-[#202020]">
                       {follow ? <img src={heartFill}/> : <img src={heart}/>}
                     </div>
-                    <div className="icon size-10 p-1  md:p-3 md:size-12 text-center flex items-center justify-center rounded-full cursor-pointer hover:text-primary ml-4 bg-[#202020]">
+                    <div className="icon size-10 p-1  md:p-3 md:size-12 text-center flex items-center justify-center rounded-full cursor-pointer hover:text-primary ml-2 md:ml-4 bg-[#202020]">
                       <FontAwesomeIcon icon={faShare}/>
                     </div>
                 </div>

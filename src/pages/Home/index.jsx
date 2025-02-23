@@ -78,7 +78,7 @@ function Home() {
       {history.length > 0 ? (
         <div className='movie mt-12'>
           <div className='flex justify-between items-center text-white'>
-            <h2 className=' text-2xl font-bold my-4'>Đang xem</h2>
+            <h2 className='text-xl  md:text-2xl font-bold my-4'>Đang xem</h2>
             <Link className='text-sm cursor-pointer hover:text-primary transition-colors duration-250 ease-in-out'>Xem tất cả</Link>
           </div>
           <ItemSlide data={history} small />
@@ -86,7 +86,7 @@ function Home() {
 
       <div className='movie mt-12'>
         <div className='flex justify-between items-center text-white'>
-          <h2 className=' text-2xl font-bold my-4'>Mới ra mắt</h2>
+          <h2 className='text-xl  md:text-2xl font-bold my-4'>Mới ra mắt</h2>
           <Link className='text-sm cursor-pointer hover:text-primary transition-colors duration-250 ease-in-out'>Xem tất cả</Link>
         </div>
         <ItemSlide data={newMovie} large />
@@ -95,7 +95,7 @@ function Home() {
 
       <div className='movie mt-12'>
         <div className='flex justify-between items-center text-white'>
-          <h2 className=' text-2xl font-bold my-4'>TV Shows</h2>
+          <h2 className='text-xl  md:text-2xl font-bold my-4'>TV Shows</h2>
           <Link to={`${configs.routes.category}?path=danh-sach${configs.routes.tvshows}`} className='text-sm cursor-pointer hover:text-primary transition-colors duration-250 ease-in-out'>Xem tất cả</Link>
         </div>
         <ItemSlide data={tvShow} small />
@@ -104,7 +104,7 @@ function Home() {
 
       <div className='movie mt-12'>
         <div className='flex justify-between items-center text-white'>
-          <h2 className=' text-2xl font-bold my-4'>Phim bộ hot</h2>
+          <h2 className='text-xl  md:text-2xl font-bold my-4'>Phim bộ hot</h2>
           <Link to={`${configs.routes.category}?path=danh-sach${configs.routes.phimbo}`} className='text-sm cursor-pointer hover:text-primary transition-colors duration-250 ease-in-out'>Xem tất cả</Link>
         </div>
         <ItemSlide data={seriesMovie} medium />
@@ -112,7 +112,7 @@ function Home() {
 
       <div className='movie mt-12'>
         <div className='flex justify-between items-center text-white'>
-          <h2 className=' text-2xl font-bold my-4'>Phim lẻ nổi bật</h2>
+          <h2 className='text-xl  md:text-2xl font-bold my-4'>Phim lẻ nổi bật</h2>
           <Link to={`${configs.routes.category}?path=danh-sach${configs.routes.single}`} className='text-sm cursor-pointer hover:text-primary transition-colors duration-250 ease-in-out'>Xem tất cả</Link>
         </div>
         <ItemSlide data={singleMovie} medium />
@@ -120,7 +120,7 @@ function Home() {
 
       <div className='movie mt-12'>
         <div className='flex justify-between items-center text-white'>
-          <h2 className=' text-2xl font-bold my-4'>Anime hấp dẫn</h2>
+          <h2 className='text-xl  md:text-2xl font-bold my-4'>Anime hấp dẫn</h2>
           <Link to={`${configs.routes.category}?path=danh-sach${configs.routes.anime}`} className='text-sm cursor-pointer hover:text-primary transition-colors duration-250 ease-in-out'>Xem tất cả</Link>
         </div>
         <ItemSlide data={animeMovie} medium />
@@ -128,7 +128,7 @@ function Home() {
 
       <div className='movie mt-12'>
         <div className='flex justify-between items-center text-white'>
-          <h2 className=' text-2xl font-bold my-4'>Phim bộ Việt Nam đặc sắc</h2>
+          <h2 className='text-xl  md:text-2xl font-bold my-4'>Phim bộ Việt Nam đặc sắc</h2>
           <Link to={`${configs.routes.category}?path=danh-sach${configs.routes.phimbo}&query={"country":"viet-nam"}`} className='text-sm cursor-pointer hover:text-primary transition-colors duration-250 ease-in-out'>Xem tất cả</Link>
         </div>
         <ItemSlide data={seriesMovieVietNam} medium />
@@ -136,7 +136,7 @@ function Home() {
 
       <div className='movie mt-12'>
         <div className='flex justify-between items-center text-white'>
-          <h2 className=' text-2xl font-bold my-4'>Siêu phẩm Thái Lan</h2>
+          <h2 className='text-xl  md:text-2xl font-bold my-4'>Siêu phẩm Thái Lan</h2>
           <Link to={`${configs.routes.category}?path=quoc-gia/thai-lan`} className='text-sm cursor-pointer hover:text-primary transition-colors duration-250 ease-in-out'>Xem tất cả</Link>
         </div>
         <ItemSlide data={movieThaiLand} medium />
@@ -146,7 +146,7 @@ function Home() {
       {isRender && children.data.items.length > 0 ? (
         <div className='movie mt-12'>
           <div className='flex justify-between items-center text-white'>
-            <h2 className=' text-2xl font-bold my-4'>Thiếu nhi</h2>
+            <h2 className='text-xl  md:text-2xl font-bold my-4'>Thiếu nhi</h2>
             <Link to={`${configs.routes.category}?path=the-loai/thieu-nhi`} className='text-sm cursor-pointer hover:text-primary transition-colors duration-250 ease-in-out'>Xem tất cả</Link>
           </div>
           <ItemSlide data={children} small />
@@ -155,7 +155,7 @@ function Home() {
 
       <div className='movie mt-12'>
         <div className='flex justify-between items-center text-white'>
-          <h2 className=' text-2xl font-bold my-4'>Muôn vàn sắc thái tình yêu</h2>
+          <h2 className='text-xl  md:text-2xl font-bold my-4'>Muôn vàn sắc thái tình yêu</h2>
           <Link to={`${configs.routes.category}?path=the-loai/tinh-cam`} className='text-sm cursor-pointer hover:text-primary transition-colors duration-250 ease-in-out'>Xem tất cả</Link>
         </div>
         <ItemSlide data={loveMovies} medium />
@@ -164,7 +164,7 @@ function Home() {
       
       <div className='movie mt-12'>
         <div className='flex justify-between items-center text-white'>
-          <h2 className=' text-2xl font-bold my-4'>Khoa học hấp dẫn</h2>
+          <h2 className='text-xl  md:text-2xl font-bold my-4'>Khoa học hấp dẫn</h2>
           <Link to={`${configs.routes.category}?path=the-loai/khoa-hoc`} className='text-sm cursor-pointer hover:text-primary transition-colors duration-250 ease-in-out'>Xem tất cả</Link>
         </div>
         <ItemSlide data={scienceMovies} medium />

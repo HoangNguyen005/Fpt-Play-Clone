@@ -7,16 +7,10 @@ import Button from '../../components/Button'
 import SearchMovie from '../../components/SearchMovie'
 
 function Search() {
-    // const btnRef = useRef()
-    // const clearRef = useRef()
-    // const inputRef = useRef()
-    // const [inputValue, setInputValue] = useState('')
+
     const [movie, setMovie] = useState({})
     // const [debounce] = useDebounce(inputValue, 500)
     let checkRef = useRef(false);
-
-    // console.log('re-render search page')
- 
 
     useEffect(() => {
         const fetchApi = async () => {

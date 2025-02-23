@@ -26,8 +26,8 @@ function Header() {
     const [show, setShow] = useState(false)
     const navRef = useRef()
     const [showBar, setShowBar] = useState(false)
-    const isUser  = true
-    // console.log('header re-render')
+    const isUser = false
+   
     return (
         // fragments
         <>
@@ -197,7 +197,7 @@ function Header() {
                                     </Tippy>
                                 </span>
                             ) : (
-                                <Button className='button block lg:hidden ' onClick={() => setShow(true)} transparent>Đăng nhập</Button>
+                                <Button className={cx('ml-4 block cursor-pointer')} onClick={() => setShow(true)} transparent>Đăng nhập</Button>
                             )}
 
                             <ul className='flex flex-col text-sm pt-4 h-full overflow-auto'>
@@ -275,7 +275,7 @@ function Header() {
                             <FontAwesomeIcon className="text-text text-xl hover:text-primary" icon={faBell} />
                         </div>
 
-                        <Button iconHidden icon={<FontAwesomeIcon icon={faWallet} />} className='rounded-md md:px-4 lg:py-2 px-3 py-2 w-[113px] h-[40px] flex items-center justify-center text-sm md:text-md order-1 lg:order-3' to='/muagoi' primary fontBold>Mua gói</Button>
+                        <Button hiddenMobileIcon icon={<FontAwesomeIcon icon={faWallet} />} className='rounded-md md:px-4 lg:py-2 px-3 py-2 md:w-[113px] md:h-[40px] w-[86px] h-[34px] text-white flex items-center justify-center text-sm md:text-md order-1 lg:order-3' to='/muagoi' primary fontBold>Mua gói</Button>
 
                         {isUser ? (
                             <span className="hidden lg:block relative order-4">
@@ -342,7 +342,7 @@ function Header() {
                                 </Tippy>
                             </span>
                         ) : (
-                            <Button className='button hidden lg:block order-4' onClick={() => setShow(true)} transparent>Đăng nhập</Button>
+                            <Button className='rounded-md md:px-4 lg:py-2 px-3 py-2 w-[113px] h-[40px] text-white items-center justify-center text-sm  hidden lg:block order-4' onClick={() => setShow(true)} transparent>Đăng nhập</Button>
                         )}
 
 

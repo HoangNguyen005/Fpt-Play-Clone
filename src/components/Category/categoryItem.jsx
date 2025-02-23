@@ -6,7 +6,7 @@ function CategoryItem({image, path, params = {}}) {
     // console.log(params)
     return ( 
        
-            <Link to={`${configs.routes.category}?path=${path}&query=${query}`} className=" w-[207px] h-[120px] cursor-pointer">
+            <Link to={`${configs.routes.category}?path=${path}&query=${query}`} className="w-[176px] h-[100px] md:w-[207px] md:h-[120px] cursor-pointer">
                 <img className="size-full object-cover" src={image}/>
             </Link>
        

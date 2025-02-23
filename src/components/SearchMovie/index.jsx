@@ -48,12 +48,12 @@ function Search() {
         const fetchApi = async () => {
             try {
                 if(inputValue.length === 0) return;
+                setLoadding(true)
                 const response = await services.search(inputValue);
                 // setMovie(response);
-                setLoadding(true)
                 setShowResults(true)
                 setSearchResults(response.data.items)
-                // setLoadding(false)
+                setLoadding(false)
 
             } catch (error) {
                 console.error('Error fetching data', error);
@@ -96,7 +96,7 @@ function Search() {
 
 
 
-                <div className="search-container relative bg-[#151515] rounded-md w-full h-16 flex items-center ">
+                <div className="search-container overflow-hidden relative bg-[#151515] rounded-md w-full h-16 flex items-center ">
                     <div className="icon text-text p-4 text-xl">
                         <FontAwesomeIcon icon={faSearch} />
                     </div>
@@ -113,19 +113,19 @@ function Search() {
                     />
                     {loadding && inputValue.length != 0 ? (
                         <div>
-                            <FontAwesomeIcon className="text-text text-md select-none mr-2 animate-spin p-4" icon={faSpinner}/>
+                            <FontAwesomeIcon className="text-text text-md select-none mr-2 animate-spin p-4  z-10 absolute right-30 top-[50%] translate-y-[-50%]"  icon={faSpinner}/>
                         </div>
                     ) : (
 
                         <div ref={clearRef} onClick={handleClear} className={classNames({ hidden: inputValue.length <= 0 })}>
-                            <FontAwesomeIcon className="text-text text-md mr-2 cursor-pointer hover:text-primary p-4" icon={faXmark} />
+                            <FontAwesomeIcon className="text-text text-md mr-2 cursor-pointer hover:text-primary p-4 z-10  absolute right-30 top-[50%] translate-y-[-50%]"  icon={faXmark} />
                         </div>
 
                     )}
                     {inputValue.length > 0 ? (
-                        <Button ref={btnRef} primary className="rounded z-20 md:w-27 md:h-12 w-22 h-10 mr-4 text-sm md:text-md text-text cursor-pointer ">Tìm kiếm</Button>
+                        <Button ref={btnRef} primary className="rounded absolute right-1 z-20 md:w-27 md:h-12 w-22 h-10 mr-4 text-sm md:text-md text-text cursor-pointer ">Tìm kiếm</Button>
                     ) : (
-                        <Button ref={btnRef} className="bg-[#2C2C2E] z-20 rounded-md md:w-27 md:h-12 w-22 h-10 mr-4 text-sm md:text-md text-text cursor-pointer ">Tìm kiếm</Button>
+                        <Button ref={btnRef} className="bg-[#2C2C2E] absolute right-1  z-20 rounded-md md:w-27 md:h-12 w-22 h-10 mr-4 text-sm md:text-md text-text cursor-pointer ">Tìm kiếm</Button>
                     )}
 
                 </div>

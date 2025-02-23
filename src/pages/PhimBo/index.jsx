@@ -80,7 +80,7 @@ function PhimBo() {
             <Hero data={seriesMovie} />
 
             <div className="category mt-10">
-                <h2 className='text-white text-2xl font-bold my-4'>Thể loại</h2>
+                <h2 className='text-whitetext-xl md:text-2xl font-bold my-4'>Thể loại</h2>
                 <CategoryWrapper>
                     <CategoryItem params={{category: 'hoa-ngu'}} image={HoaNgu} />
                     <CategoryItem params={{country: 'viet-nam'}} image={VietNam} />
@@ -93,7 +93,7 @@ function PhimBo() {
 
             <div className='movie mt-12'>
                 <div className='flex justify-between items-center text-white'>
-                    <h2 className=' text-2xl font-bold my-4'>Phim bộ hot</h2>
+                    <h2 className='text-xl md:text-2xl font-bold my-4'>Phim bộ hot</h2>
                 </div>
                 <ItemSlide data={seriesMovie} medium />
             </div>
@@ -102,56 +102,56 @@ function PhimBo() {
 
             <div className='movie mt-12'>
                 <div className='flex justify-between items-center text-white'>
-                    <h2 className=' text-2xl font-bold my-4'>Top phim Hoa ngữ &quot;bạo đỏ&quot;</h2>
+                    <h2 className='text-xl md:text-2xl font-bold my-4'>Top phim Hoa ngữ &quot;bạo đỏ&quot;</h2>
                 </div>
                 <ItemSlide data={chinaLoveMovies} medium />
             </div>
 
             <div className='movie mt-12'>
                 <div className='flex justify-between items-center text-white'>
-                    <h2 className=' text-2xl font-bold my-4'>Phim bộ Việt Nam đặc sắc</h2>
+                    <h2 className='text-xl md:text-2xl font-bold my-4'>Phim bộ Việt Nam đặc sắc</h2>
                 </div>
                 <ItemSlide data={seriesMovieVietNam} medium />
             </div>
 
             <div className='movie mt-12'>
                 <div className='flex justify-between items-center text-white'>
-                    <h2 className=' text-2xl font-bold my-4'>VietSub</h2>
+                    <h2 className='text-xl md:text-2xl font-bold my-4'>VietSub</h2>
                 </div>
                 <ItemSlide data={vietSub} small />
             </div>
 
             <div className='movie mt-12'>
                 <div className='flex justify-between items-center text-white'>
-                    <h2 className=' text-2xl font-bold my-4'>Muôn vàn sắc thái tình yêu</h2>
+                    <h2 className='text-xl md:text-2xl font-bold my-4'>Muôn vàn sắc thái tình yêu</h2>
                 </div>
                 <ItemSlide data={loveMovies} medium />
             </div>
 
             <div className='movie mt-12'>
                 <div className='flex justify-between items-center text-white'>
-                    <h2 className=' text-2xl font-bold my-4'>Hoa ngữ</h2>
+                    <h2 className='text-xl md:text-2xl font-bold my-4'>Hoa ngữ</h2>
                 </div>
                 <ItemSlide data={chinaMovies} small />
             </div>
 
             <div className='movie mt-12'>
                 <div className='flex justify-between items-center text-white'>
-                    <h2 className=' text-2xl font-bold my-4'>Hàn Quốc</h2>
+                    <h2 className='text-xl md:text-2xl font-bold my-4'>Hàn Quốc</h2>
                 </div>
                 <ItemSlide data={koreanMovie} small />
             </div>
 
             <div className='movie mt-12'>
                 <div className='flex justify-between items-center text-white'>
-                    <h2 className=' text-2xl font-bold my-4'>Thái Lan</h2>
+                    <h2 className='text-xl md:text-2xl font-bold my-4'>Thái Lan</h2>
                 </div>
                 <ItemSlide data={thaiLand} small />
             </div>
 
             <div className='movie mt-12'>
                 <div className='flex justify-between items-center text-white'>
-                    <h2 className=' text-2xl font-bold my-4'>Phim tiên hiệp, huyền huyễn</h2>
+                    <h2 className='text-xl md:text-2xl font-bold my-4'>Phim tiên hiệp, huyền huyễn</h2>
                 </div>
                 <ItemSlide data={cotrang} medium />
             </div>

@@ -8,7 +8,7 @@ const emptyFunc = () => { }
 
 function Button({
     children,
-    iconHidden,
+    hiddenMobileIcon,
     onClick = emptyFunc,
     disabled = false,
     className = '',
@@ -73,7 +73,7 @@ function Button({
          {...props}
          
          >
-          {icon ? <span className={classNames('icon text-base mr-2 text-center', {'lg:block': iconHidden})}>{icon}</span> : null}
+          {icon ? <span className={classNames('icon text-base  mr-2 text-center', {'hidden': hiddenMobileIcon})}>{icon}</span> : null}
            <span>{children}</span>       
         </Tag>
     );
@@ -94,7 +94,7 @@ Button.propTypes = {
     icon: PropTypes.node,
     data: PropTypes.string,
     rounded: PropTypes.bool,
-    iconHidden: PropTypes.bool,
+    hiddenMobileIcon: PropTypes.bool,
 }
 
 export default Button;

@@ -75,7 +75,7 @@ function Single() {
             <Hero data={singleMovie} />
 
             <div className="category mt-10">
-                <h2 className='text-white text-2xl font-bold my-4'>Thể loại</h2>
+                <h2 className='text-white text-xl md:text-2xl font-bold my-4'>Thể loại</h2>
                 <CategoryWrapper>
                     <CategoryItem path='danh-sach/phim-le' params={{category: 'tinh-cam'}} image={tinhCam} />
                     <CategoryItem path='danh-sach/phim-le' params={{category: 'kinh-di'}} image={kinhDi} />
@@ -89,49 +89,49 @@ function Single() {
 
             <div className='movie mt-12'>
                 <div className='flex justify-between items-center text-white'>
-                    <h2 className=' text-2xl font-bold my-4'>Một mình vẫn vui</h2>
+                    <h2 className=' text-xl md:text-2xl font-bold my-4'>Một mình vẫn vui</h2>
                 </div>
                 <ItemSlide data={singleMovie} medium />
             </div>
 
             <div className='movie mt-12'>
                 <div className='flex justify-between items-center text-white'>
-                    <h2 className=' text-2xl font-bold my-4'>Phim hành động gay cấn</h2>
+                    <h2 className=' text-xl md:text-2xl font-bold my-4'>Phim hành động gay cấn</h2>
                 </div>
                 <ItemSlide data={actionMovie} medium />
             </div>
 
             <div className='movie mt-12'>
                 <div className='flex justify-between items-center text-white'>
-                    <h2 className=' text-2xl font-bold my-4'> Phim tâm lý đỉnh cao</h2>
+                    <h2 className=' text-xl md:text-2xl font-bold my-4'> Phim tâm lý đỉnh cao</h2>
                 </div>
                 <ItemSlide data={tamLy} medium />
             </div>
 
             <div className='movie mt-12'>
                 <div className='flex justify-between items-center text-white'>
-                    <h2 className=' text-2xl font-bold my-4'>Phim kinh dị giật gân</h2>
+                    <h2 className=' text-xl md:text-2xl font-bold my-4'>Phim kinh dị giật gân</h2>
                 </div>
                 <ItemSlide data={kinhDiMovie} medium />
             </div>
 
             <div className='movie mt-12'>
                 <div className='flex justify-between items-center text-white'>
-                    <h2 className=' text-2xl font-bold my-4'>Phim hài hước đặc sắc</h2>
+                    <h2 className=' text-xl md:text-2xl font-bold my-4'>Phim hài hước đặc sắc</h2>
                 </div>
                 <ItemSlide data={HaiHuoc} medium />
             </div>
 
             <div className='movie mt-12'>
                 <div className='flex justify-between items-center text-white'>
-                    <h2 className=' text-2xl font-bold my-4'>Phim tình cảm lãng mạn</h2>
+                    <h2 className=' text-xl md:text-2xl font-bold my-4'>Phim tình cảm lãng mạn</h2>
                 </div>
                 <ItemSlide data={TinhCam} medium />
             </div>
 
             <div className='movie mt-12'>
                 <div className='flex justify-between items-center text-white'>
-                    <h2 className=' text-2xl font-bold my-4'>Phim tài liệu chân thực</h2>
+                    <h2 className=' text-xl md:text-2xl font-bold my-4'>Phim tài liệu chân thực</h2>
                 </div>
                 <ItemSlide data={TaiLieu} medium />
             </div>
@@ -139,7 +139,7 @@ function Single() {
             
             <div className='movie mt-12'>
                 <div className='flex justify-between items-center text-white'>
-                    <h2 className=' text-2xl font-bold my-4'>Điện ảnh Việt</h2>
+                    <h2 className=' text-xl md:text-2xl font-bold my-4'>Điện ảnh Việt</h2>
                 </div>
                 <ItemSlide data={vietnam} medium />
             </div>

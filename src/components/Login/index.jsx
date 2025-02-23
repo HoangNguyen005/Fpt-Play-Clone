@@ -28,8 +28,8 @@ function LoginPage({ setShow }) {
                 <div className="close-modal absolute top-6 right-6 size-8 rounded-full bg-gray-600 text-gray-300 text-xl text-center leading-8 cursor-pointer" onClick={setShow}>
                     <FontAwesomeIcon icon={faXmark} />
                 </div>
-                <div className="modal-login-form bg-[#202020] rounded-2xl absolute top-[50%] left-[50%] p-16 translate-x-[-50%] translate-y-[-50%] w-[503px]">
-                    <h2 className="text-3xl font-bold text-gray-300">Đăng nhập hoặc đăng ký</h2>
+                <div className="modal-login-form bg-[#202020] rounded-2xl absolute top-[50%] left-[50%] px-4 py-10 md:p-16 translate-x-[-50%] translate-y-[-50%] w-[503px] max-w-full">
+                    <h2 className="text-xl md:text-3xl font-bold text-gray-300">Đăng nhập hoặc đăng ký</h2>
                     <div className="form-group">
                         <input type="number" autoComplete="off" className="form-input w-full h-14 mt-10 p-4 rounded-md text-white outline-none bg-[#2c2c2e]" placeholder="Số điện thoại" />
                     </div>

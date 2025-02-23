@@ -68,7 +68,7 @@ function Anime() {
 
 
             <div className="category mt-10">
-                <h2 className='text-white text-2xl font-bold my-4'>Thể loại</h2>
+                <h2 className='text-white text-xl md:text-2xl font-bold my-4'>Thể loại</h2>
                 <CategoryWrapper>
                     <CategoryItem path='danh-sach/hoat-hinh' params={{category: 'hanh-dong'}} image={hanhDong} />
                     <CategoryItem path='danh-sach/hoat-hinh' params={{category: 'vien-tuong'}} image={vienTuong} />
@@ -80,35 +80,35 @@ function Anime() {
 
             <div className='movie mt-12'>
                 <div className='flex justify-between items-center text-white'>
-                    <h2 className=' text-2xl font-bold my-4'>Tình cảm lãng mạn</h2>
+                    <h2 className=' text-xl md:text-2xl font-bold my-4'>Tình cảm lãng mạn</h2>
                 </div>
                 <ItemSlide data={animeLove} medium />
             </div>
 
             <div className='movie mt-12'>
                 <div className='flex justify-between items-center text-white'>
-                    <h2 className=' text-2xl font-bold my-4'>Hoạt hình Trung Quốc</h2>
+                    <h2 className=' text-xl md:text-2xl font-bold my-4'>Hoạt hình Trung Quốc</h2>
                 </div>
                 <ItemSlide data={animeChina} medium />
             </div>
 
             <div className='movie mt-12'>
                 <div className='flex justify-between items-center text-white'>
-                    <h2 className=' text-2xl font-bold my-4'>Hành động đỉnh cao</h2>
+                    <h2 className=' text-xl md:text-2xl font-bold my-4'>Hành động đỉnh cao</h2>
                 </div>
                 <ItemSlide data={animeAction} medium />
             </div>
 
             <div className='movie mt-12'>
                 <div className='flex justify-between items-center text-white'>
-                    <h2 className=' text-2xl font-bold my-4'>Phiêu lưu mạo hiểm</h2>
+                    <h2 className=' text-xl md:text-2xl font-bold my-4'>Phiêu lưu mạo hiểm</h2>
                 </div>
                 <ItemSlide data={animePhieuLuu} medium />
             </div>
 
             <div className='movie mt-12'>
                 <div className='flex justify-between items-center text-white'>
-                    <h2 className=' text-2xl font-bold my-4'>Học đường</h2>
+                    <h2 className=' text-xl md:text-2xl font-bold my-4'>Học đường</h2>
                 </div>
                 <ItemSlide data={animeSchool} medium />
             </div>
