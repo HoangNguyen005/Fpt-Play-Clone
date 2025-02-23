@@ -73,17 +73,13 @@ function ItemSlide({ large, medium, small, data }) {
                 {Object.keys(data).length > 0 || data.length > 0 ? (Array.isArray(data) ? data : (data.items || data.data.items)).map((item, index) => (
                     <SwiperSlide key={index} className={cx('swiper-slide')}>
                         <div className={cx(classes)}>
-                            <Link onClick={() =>{ handleSetHistory(item); toTop()}} to={`${configs.routes.video}?slug=${item.slug}`}>
-                                <div data-slug={item.slug} >
-                                    <div className={cx("movie-item")}>
-                                        <div className={cx('icon-play')}>
-                                            <FontAwesomeIcon icon={faPlay} />
-                                        </div>
-                                    </div>
-                                </div>
+                            <div className={cx('overlay')}/>
+                            <Link className={cx('relative group size-auto', 'slide')} onClick={() => { handleSetHistory(item); toTop() }} to={`${configs.routes.video}?slug=${item.slug}`}>
+
+                               <div className={cx('icon-play', 'absolute top-[50%] left-[10%] translate-[-50%]')}> <FontAwesomeIcon className={cx('text-white  text-2xl')} icon={faPlay} /></div>
                                 <img
-                                    
-                                    className='w-full h-[80%] object-cover rounded-md'
+
+                                    className={cx('w-full h-[80%] object-cover rounded-md')}
                                     onLoad={() => setLoad(true)}
                                     src={!load ? (medium ? defaultImageMedium : defaultImageLarge) : (item.thumb_url.startsWith('https://phimimg.com') ? item.thumb_url : `https://phimimg.com/${item.thumb_url} `)}
                                     alt={item.name}
