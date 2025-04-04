@@ -26,7 +26,6 @@ import classNames from 'classnames/bind';
 import styles from './ItemSlide.module.scss'
 const cx = classNames.bind(styles)
 
-
 function ItemSlide({ large, medium, small, data }) {
 
     const [load, setLoad] = useState(false)
@@ -37,6 +36,7 @@ function ItemSlide({ large, medium, small, data }) {
         width: '6%',
         height: '80%',
     };
+    
     const classes = cx({
         large,
         small,
