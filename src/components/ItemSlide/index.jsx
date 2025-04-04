@@ -74,16 +74,20 @@ function ItemSlide({ large, medium, small, data }) {
                     <SwiperSlide key={index} className={cx('swiper-slide')}>
                         <div className={cx(classes, 'relative')}>
 
-                            <Link className={cx('size-full  group', 'slide')} onClick={() => { handleSetHistory(item); toTop() }} to={`${configs.routes.video}?slug=${item.slug}`}>
-                         
-                                <div className={cx('icon-play', 'absolute top-[35%] left-[50%] translate-x-[-50%]')}> <FontAwesomeIcon className={cx('text-white  text-3xl')} icon={faPlay} /></div>
-                                <img
+                            <Link className={cx('w-full h-[80%] block group', 'slide')} onClick={() => { handleSetHistory(item); toTop() }} to={`${configs.routes.video}?slug=${item.slug}`}>
+                             
 
-                                    className={cx('w-full h-[80%] object-cover rounded-md')}
-                                    onLoad={() => setLoad(true)}
-                                    src={!load ? (medium ? defaultImageMedium : defaultImageLarge) : (item.thumb_url.startsWith('https://phimimg.com') ? item.thumb_url : `https://phimimg.com/${item.thumb_url} `)}
-                                    alt={item.name}
-                                />
+                                    <div className={cx('icon-play', 'absolute top-0 left-0 w-full h-[80%]')}>
+                                         <FontAwesomeIcon className={cx('text-white size-10 text-3xl absolute translate-[-50%] left-[50%] top-[50%]')} icon={faPlay} />
+                                    </div>
+                                    <img
+
+                                        className={cx('size-full object-cover rounded-md relative block before:absolute before:content-[""] before:size-full before:bg-black/50 before:z-40')}
+                                        onLoad={() => setLoad(true)}
+                                        src={!load ? (medium ? defaultImageMedium : defaultImageLarge) : (item.thumb_url.startsWith('https://phimimg.com') ? item.thumb_url : `https://phimimg.com/${item.thumb_url} `)}
+                                        alt={item.name}
+                                    />
+                               
                             </Link>
                             <h4 className='capitalize h-[20%] text-white font-[400] leading-6 max-h-12 overflow-hidden text-[1rem] text-left mt-3'>{item.name}</h4>
                         </div>

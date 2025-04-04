@@ -1,5 +1,5 @@
 .primary {  
-    color: var(--white-color);
+    color: #fff;
     background: linear-gradient(114.88deg, #fe592a 0%, #e93013 97.15%);
 
     &:hover {
@@ -9,6 +9,11 @@
 
 .fontBold {
     font-weight: 600;
+}
+
+.transparent,.primary {
+    user-select: none;
+    cursor: pointer;
 }
 
 .button {
@@ -23,7 +28,7 @@
 
 .transparent {
     background: transparent;
-    color: var(--white-color);
+    color: #FFF;
     font-weight:normal;
 
     &:hover {
