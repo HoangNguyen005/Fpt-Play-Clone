@@ -38,6 +38,8 @@ function Video() {
     const [isRender, setIsRender] = useState(false)
     const swiperRef = useRef(null);
   
+
+
     const [showContent, setShowContent] = useState(false)
     const [following, setFollowing] = useState(false)
     const [movie, setMovie] = useState({})
@@ -83,8 +85,10 @@ function Video() {
     if (isRender) {
         if (typeof (trailerUrl.current) == 'string') {
             // console.log(trailerUrl.current)
-            var trailer = getEmbedUrl(trailerUrl.current)  
+            var trailer = getEmbedUrl(trailerUrl.current)
+       
         }
+
     }
 
    
