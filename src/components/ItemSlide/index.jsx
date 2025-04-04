@@ -37,7 +37,6 @@ function ItemSlide({ large, medium, small, data }) {
         width: '6%',
         height: '80%',
     };
-
     const classes = cx({
         large,
         small,
